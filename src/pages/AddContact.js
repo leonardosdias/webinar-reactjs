@@ -7,20 +7,36 @@ function AddContact() {
         <div>
             <div className="container">
                 <form>
-                    <div class="form-group">
-                        <label for="exampleInputNome">Nome</label>
-                        <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp" />
+                    <div className="row">
+                        <div className="col-md-12">
+                            <label htmlFor="exampleInputNome">Nome</label>
+                            <input type="text" className="form-control" id="name" aria-describedby="emailHelp" />
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputTelefone">Telefone</label>
-                        <input type="text" class="form-control" id="exampleInputTelefone" />
+                    <div className="row">
+                        <div className="col-md-12">
+                            <label htmlFor="exampleInputNome">Email</label>
+                            <input type="text" className="form-control" id="email" aria-describedby="emailHelp" />
+                        </div>
                     </div>
-                    <div class="form-group form-check">
-                        <button type="submit" class="btn btn-primary">Salvar</button><br></br><br></br>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <label htmlFor="exampleInputTelefone">Telefone</label>
+                            <input type="text" className="form-control" id="phone" />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <label htmlFor="exampleInputNome">Departamento</label>
+                            <input type="text" className="form-control" id="department" aria-describedby="emailHelp" />
+                        </div>
+                    </div>
+                    <div className="form-group form-check">
+                        <button type="submit" className="btn btn-primary">Salvar</button><br></br><br></br>
                         <Link to={'/'}>
-                            <button type="submit" class="btn btn-danger">
+                            <button type="submit" className="btn btn-danger">
                                 Voltar
-                        </button>
+                            </button>
                         </Link>
                     </div>
                 </form>
