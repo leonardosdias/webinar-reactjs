@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Modal from '../components/Modal/Modal';
 
-function Home() {
+function Contacts() {
 
     const [nomeContact, setNomeContact] = useState('');
     const [telefoneContact, setTelefoneContact] = useState('');
@@ -72,4 +72,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Contacts;

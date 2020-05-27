@@ -7,7 +7,6 @@ import Content from './components/Content/Content';
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-
   return (
     <div className="d-flex" id="wrapper">
       <BrowserRouter>

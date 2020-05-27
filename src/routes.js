@@ -2,12 +2,12 @@ import React from "react";
 
 import { Switch, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
+import Contacts from "./pages/Contacts";
 import AddContact from "./pages/AddContact";
 
 const Routes = () => (
     <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Contacts} />
         <Route path="/add" component={AddContact} />
     </Switch>
 );

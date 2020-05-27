@@ -4,43 +4,45 @@ import { Link } from "react-router-dom";
 
 function AddContact() {
     return (
-        <div>
-            <div className="container">
-                <form>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <label htmlFor="exampleInputNome">Nome</label>
-                            <input type="text" className="form-control" id="name" aria-describedby="emailHelp" />
-                        </div>
+        <div className="container col-md-8">
+            <form>
+                <div className="row">
+                    <div className="col-md-12">
+                        <label htmlFor="name">Nome</label>
+                        <input type="text" className="form-control" id="name" />
                     </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <label htmlFor="exampleInputNome">Email</label>
-                            <input type="text" className="form-control" id="email" aria-describedby="emailHelp" />
-                        </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <label htmlFor="email">Email</label>
+                        <input type="text" className="form-control" id="email" aria-describedby="emailHelp" />
                     </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <label htmlFor="exampleInputTelefone">Telefone</label>
-                            <input type="text" className="form-control" id="phone" />
-                        </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <label htmlFor="phone">Telefone</label>
+                        <input type="text" className="form-control" id="phone" />
                     </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <label htmlFor="exampleInputNome">Departamento</label>
-                            <input type="text" className="form-control" id="department" aria-describedby="emailHelp" />
-                        </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <label htmlFor="department">Departamento</label>
+                        <input type="text" className="form-control" id="department" />
                     </div>
-                    <div className="form-group form-check">
-                        <button type="submit" className="btn btn-primary">Salvar</button><br></br><br></br>
+                </div>
+                <div className="row">
+                    <div className="col-md-6">
+                        <button type="submit" className="btn btn-success">Salvar</button>
+                    </div>
+                    <div className="col-md-6">
                         <Link to={'/'}>
                             <button type="submit" className="btn btn-danger">
                                 Voltar
                             </button>
                         </Link>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     )
 }
